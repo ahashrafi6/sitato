@@ -1,0 +1,324 @@
+$primary: #22D3EE;
+$primary_dark: #06B6D4;
+
+
+.top-section{
+    background-image: url('/assets/site/images/bg-header.png');
+    background-repeat: no-repeat;
+ 
+}
+
+.splide__list{
+    padding: 20px 0 !important;
+}
+
+.splide__arrow{
+    outline: 0 !important;
+}
+
+.content-area , .index-content-area{
+
+    &.loadmore {
+        max-height: 31.25rem;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #expander {
+        align-content: flex-end;
+        align-items: flex-end;
+        bottom: 0;
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    
+    }
+}
+
+.course-sidebar {
+    position: sticky !important;
+    top: 90px;
+    z-index: 1 !important;
+  }
+
+.index-content-area{
+
+    &.loadmore {
+        max-height: 11.25rem !important;
+    }
+}
+
+
+.header-section ul {
+    li {
+        a {
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 0;
+                left: 50%;
+                right: 51%;
+                bottom: 0;
+                background: $primary_dark;
+                height: .170rem;
+                transition: all .3s ease-out;
+            }
+        }
+
+
+        a.active:before {
+            left: 0;
+            right: 0;
+        }
+
+        a.active i {
+            color: $primary_dark !important;
+        }
+    }
+}
+
+.footer-section {
+    .bg-section {
+        background-image: url('/assets/site/images/subwp-bg-section.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+    }
+
+    .copyright-icon {
+        width: 28px;
+        height: 28px;
+        background-image: url('/assets/site/images/subwp-icon-gray.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+}
+
+.openProductAccessTab {
+    left: 0 !important;
+}
+
+.tooltip {
+    .body {
+        min-width: 170px;
+        left: -75px;
+        z-index: 50;
+        top: 30px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease;
+
+
+        &:before {
+            content: ' ';
+            width: 10px;
+            height: 10px;
+            background: #0e7490;
+            transform: rotate(45deg);
+            position: absolute;
+            top: -5px;
+            right: 81px;
+        }
+    }
+
+    &:hover .body {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.custom-title {
+    position: relative;
+    transition: all .3s ease;
+
+    &:before {
+        position: absolute;
+        right: 0;
+        background: #22D3EE;
+        content: "";
+        height: 5px;
+        width: 100%;
+        bottom: -16px;
+        z-index: -1;
+        transition: all .3s ease;
+    }
+
+    &:hover {
+        color: #ffffff;
+    }
+
+    &:hover:before {
+        height: 168%;
+    }
+}
+
+.custom-radio {
+    position: relative;
+    width: 0 !important;
+    height: 0 !important;
+    border-width: 0 !important;
+    background: unset !important;
+    transition: all .3s ease;
+
+    &:focus {
+        outline: unset !important;
+        box-shadow: unset !important;
+    }
+}
+
+.radio-plan {
+    &.withdraw{
+        [type='radio']{
+            &:checked:before {
+                right: 8px !important;
+                top: 18px !important;
+            }
+        }
+
+    }
+    [type='radio'] {
+
+        &:before {
+            transition: all .3s ease;
+        }
+
+        &:checked:before {
+            position: absolute;
+            right: -4px;
+            top: -17px;
+            content: "";
+            font-family: "Font Awesome 5 Pro";
+            font-size: 20px;
+            color: #22D3EE;
+        }
+
+        &:checked {
+            padding-right: 1.5rem;
+        }
+    }
+}
+
+.footer-menu, .product-access-card {
+    li {
+        position: relative;
+        padding-right: 20px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 0.4375rem;
+            height: 0.4375rem;
+            background: #22D3EE;
+            top: 8px;
+            right: 0;
+            border-radius: 50%;
+        }
+    }
+}
+
+.product-access-card {
+
+    li {
+        &:before {
+            background: #FACC15 !important;
+        }
+    }
+}
+
+.badge-item, .star-item {
+    .tooltip {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.irs--round .irs-handle {
+    border: 4px solid #22D3EE !important;
+}
+
+.irs--round .irs-bar {
+    background-color: #22D3EE !important;
+}
+
+.irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single {
+    background-color: #06B6D4 !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 45px !important;
+
+    .select2-selection__rendered {
+        line-height: 43px !important;
+    }
+
+    .select2-selection__arrow {
+        top: 10px !important;
+    }
+}
+
+
+.uppy-Dashboard-AddFiles-info {
+    display: none !important;
+}
+.alert.alert-danger.alert-dismissible{
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #f42121;
+
+    button{
+        padding-left: 5px;
+    }
+}
+
+.strong-bar{
+    height: 3px !important;
+    width: 0;
+}
+.strong-msg{
+    text-align: left;
+    font-size: 12px;
+}
+.password-help{
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+}
+
+.auth-product{
+    background-image: url('/assets/site/images/auth-product.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+.plans-holder{
+
+    [type='radio'], [type='radio']:checked{
+        background-color: unset !important;
+        background: unset !important;
+        border: 0 !important;
+        outline: unset !important;
+        height: 0 !important;
+        width: 0 !important;
+     }
+
+
+    [type='radio']:checked + label i{
+       display: block !important;
+    }
+}

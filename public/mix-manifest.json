@@ -1,0 +1,11 @@
+{
+    "/assets/site/js/site.js": "/assets/site/js/site.js",
+    "/assets/site/js/alpine.js": "/assets/site/js/alpine.js",
+    "/assets/site/js/uppy.js": "/assets/site/js/uppy.js",
+    "/assets/site/js/vue.js": "/assets/site/js/vue.js",
+    "/assets/dashboard/js/vue.js": "/assets/dashboard/js/vue.js",
+    "/assets/site/scss/uppy.css": "/assets/site/scss/uppy.css",
+    "/assets/dashboard/scss/vue.css": "/assets/dashboard/scss/vue.css",
+    "/assets/site/css/site.css": "/assets/site/css/site.css",
+    "/assets/site/scss/site.css": "/assets/site/scss/site.css"
+}

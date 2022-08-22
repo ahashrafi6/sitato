@@ -1,0 +1,114 @@
+@import '../../../../node_modules/tailwindcss/base.css';
+@import '../../../../node_modules/tailwindcss/components.css';
+@import '../../../../node_modules/tailwindcss/utilities.css';
+@import 'layouts/fontawesome.css';
+
+
+@layer utilities {
+    .dir-rtl {
+        direction: rtl;
+    }
+    .dir-ltr {
+        direction: ltr;
+    }
+    .custom-shadow{
+        box-shadow: 0 10px 25px 0 rgba(170,179,217,.12);
+    }
+
+    .max-w-8xl{
+        max-width: 90rem;
+    }
+
+    .z-negative{
+        z-index: -1;  
+    }
+    .z-60{
+        z-index: 60;
+    }
+    .z-60{
+        z-index: 60;
+    }
+    .z-70{
+        z-index: 70;
+    }
+    .z-80{
+        z-index: 80;
+    }
+    .z-90{
+        z-index: 90;
+    }
+    .z-100{
+        z-index: 100;
+    }
+    .w-icon{
+        width: 80px;
+    }
+
+    .h-450{
+        height: 450px;
+    }
+    .h-600{
+        height: 600px;
+    }
+
+    .w-500{
+        width: 500px;
+    }
+
+    .title-page-oval{
+        border-radius: 0 0 14% 14%;
+    }
+}
+@layer components {
+    .btn {
+        @apply py-2 px-4 text-white rounded-lg shadow-md focus:outline-none focus:ring-2  focus:ring-opacity-75 transition;
+    }
+    .btn-primary {
+        @apply bg-primary-400 focus:ring-primary-400 hover:bg-primary-500;
+    }
+    .btn-green {
+        @apply bg-green-400 focus:ring-green-400 hover:bg-green-500;
+    }
+    .btn-gray {
+        @apply bg-gray-400 focus:ring-gray-400 hover:bg-gray-500;
+    }
+    .btn-orange {
+        @apply bg-orange-400 focus:ring-orange-400 hover:bg-orange-500;
+    }
+    .btn-yellow {
+        @apply bg-yellow-400 focus:ring-yellow-400 hover:bg-yellow-500;
+    }
+    .btn-red {
+        @apply bg-red-400 focus:ring-red-400 hover:bg-red-500;
+    }
+    .btn-blue {
+        @apply bg-blue-400 focus:ring-blue-400 hover:bg-blue-500;
+    }
+}
+@layer base {
+    @font-face {
+        font-family: Yekan-Regular;
+        src: url(/assets/site/fonts/iranyekan/regular/iranyekanwebregularfanum.eot);
+        src: url(/assets/site/fonts/iranyekan/regular/iranyekanwebregularfanum.eot?#iefix) format('embedded-opentype'),
+        url(/assets/site/fonts/iranyekan/regular/iranyekanwebregularfanum.woff) format('woff'),
+        url(/assets/site/fonts/iranyekan/regular/iranyekanwebregularfanum.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: Yekan-Black;
+        src: url(/assets/site/fonts/iranyekan/black/iranyekanwebextrablackfanum.eot);
+        src: url(/assets/site/fonts/iranyekan/black/iranyekanwebextrablackfanum.eot?#iefix) format('embedded-opentype'),
+        url(/assets/site/fonts/iranyekan/black/iranyekanwebextrablackfanum.woff) format('woff'),
+        url(/assets/site/fonts/iranyekan/black/iranyekanwebextrablackfanum.ttf) format('truetype');
+    }
+
+    body {
+        @apply font-yekan;
+    }
+    h1,h2,h3,h4,h5,h6,p,span,li,div,a {
+        @apply font-yekan;
+    }
+    .yekan-black{
+        @apply font-yekan-black;
+    }
+}
+
